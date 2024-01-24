@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>JDIWSBP</title>
+
+  <link href="assets/img/favicon.png" rel="icon" type="image/x-icon">
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/dist/css/custom.css" rel="stylesheet">
+  <link href="assets/dist/css/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Datatable -->
+  <link href="assets/dist/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="preloader-wrapper">
+    <div class="spinner-border text-light" style="width: 3rem;height: 3rem;">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top shadow wbpblue" data-bs-theme="dark"
+      aria-label="Eleventh navbar example">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">JDI<span class="text-orange">WSBP</span></a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarsExample09" data-bs-theme="light">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Standar</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="single.html">ISO 14001 : Manajemen Lingkungan</a></li>
+                <li><a class="dropdown-item disabled" href="#">ISO 19650 : Pengelolaan Informasi Bangunan dan Konstruksi Sipil
+                    (BIM)</a></li>
+                <li><a class="dropdown-item disabled" href="#">ISO 21502 : Manajemen Proyek</a></li>
+                <li><a class="dropdown-item disabled" href="#">ISO 27001 : Manajemen Keamanan Informasi</a></li>
+                <li><a class="dropdown-item disabled" href="#">ISO 31000 : Manajemen Risiko</a></li>
+                <li><a class="dropdown-item disabled" href="#">ISO 37001 : Manajemen Anti Penyuapan</a></li>
+                <li><a class="dropdown-item disabled" href="#">ISO 45001 : Manajemen Kesehatan dan Keselamatan Kerja</a></li>
+                <li><a class="dropdown-item disabled" href="#">ISO 9001 : Manajemen Mutu</a></li>
+                <li><a class="dropdown-item disabled" href="#">SMK3 (Sistem Manajemen Keselamatan dan Kesehatan Kerja)</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Kebijakan</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item disabled" href="#">Anti Penyuapan</a></li>
+                <li><a class="dropdown-item disabled" href="#">Four Eyes Principle</a></li>
+                <li><a class="dropdown-item disabled" href="#">HIV / AIDS</a></li>
+                <li><a class="dropdown-item disabled" href="#">Larangan Merokok</a></li>
+                <li><a class="dropdown-item disabled" href="#">Larangan Narkoba & Alkohol</a></li>
+                <li><a class="dropdown-item disabled" href="#">Manajemen Risiko</a></li>
+                <li><a class="dropdown-item disabled" href="#">Mutu & K3</a></li>
+                <li><a class="dropdown-item disabled" href="#">Pelanggan</a></li>
+                <li><a class="dropdown-item disabled" href="#">Pelecehan Seksual</a></li>
+                <li><a class="dropdown-item disabled" href="#">Pengadaan</a></li>
+                <li><a class="dropdown-item disabled" href="#">Pengamanan Informasi</a></li>
+                <li><a class="dropdown-item disabled" href="#">Penghentian Pekerjaan</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Pedoman</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item disabled" href="#">Akuntansi</a></li>
+                <li><a class="dropdown-item disabled" href="#">Etika & Perilaku</a></li>
+                <li><a class="dropdown-item disabled" href="#">Hubungan Kerja Komisaris & Direksi (HKD)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Keuangan</a></li>
+                <li><a class="dropdown-item disabled" href="#">Moving In / Out</a></li>
+                <li><a class="dropdown-item disabled" href="#">Pembuatan Prosedur</a></li>
+                <li><a class="dropdown-item disabled" href="#">Pengadaan Barang / Jasa</a></li>
+                <li><a class="dropdown-item disabled" href="#">Pengendalian Gratifikasi</a></li>
+                <li><a class="dropdown-item disabled" href="#">Pengendalian Internal</a></li>
+                <li><a class="dropdown-item disabled" href="#">Tata Kelola Perusahaan (GCG)</a></li>
+                <li><a class="dropdown-item disabled" href="#">TKMR</a></li>
+                <li><a class="dropdown-item disabled" href="#">Whistle Blowing</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Prosedur</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="group.html">General Affair (GA)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Hukum (HKM)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Human Capital (HC)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Instalasi & Pengiriman (IDP)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Komunikasi Korporasi (KKO)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Manajemen Infrastruktur (MIF)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Operasional (OPR)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Pemasaran (SAR)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Pengadaan Barang / Jasa (DAN)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Pengelolaan Keuangan (PKU)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Pengembangan Usaha & Evaluasi (PUE)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Perencanaan & Persiapan (PDP)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Sistem Manajemen (SMJ)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Teknik (TEK)</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Instruksi
+                Kerja</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item disabled" href="#">General Affair (GA)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Hukum (HKM)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Human Capital (HC)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Information Technology (IT)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Instalasi & Pengiriman (IDP)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Kesehatan Keselamatan Kerja Lingkungan (K3LP)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Komunikasi Korporasi (KKO)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Manajemen Infrastruktur (MIF)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Operasional (OPR)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Pemasaran (SAR)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Pengadaan Barang / Jasa (DAN)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Pengelolaan Keuangan (PKU)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Pengembangan Usaha & Evaluasi (PUE)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Perencanaan & Persiapan (PDP)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Sistem Manajemen (SMJ)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Tata Persuratan (TTP)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Teknik (TEK)</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Form</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="group_raw.html">General Affair (GA)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Hukum (HKM)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Human Capital (HC)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Instalasi & Pengiriman (IDP)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Komunikasi Korporasi (KKO)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Manajemen Infrastruktur (MIF)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Operasional (OPR)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Pemasaran (SAR)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Pengadaan Barang / Jasa (DAN)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Pengelolaan Keuangan (PKU)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Pengembangan Usaha & Evaluasi (PUE)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Perencanaan & Persiapan (PDP)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Sistem Manajemen (SMJ)</a></li>
+                <li><a class="dropdown-item disabled" href="#">Teknik (TEK)</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="surat_keputusan.html">Surat Keputusan</a>
+            </li>
+
+          </ul>
+
+          <!-- User -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                aria-expanded="false">WBP1720049301</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                <li><a class="dropdown-item" href="pengajuan.html">Pengajuan Perubahan</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-danger fw-bolder" href="https://login.garde.waskita.co.id/">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pt-5 orange_pattern">
+
+    <section class="py-5 text-center container text-light">
+      <h1 class="fw-light">Surat Keputusan</h1>
+      <span class="lead">Kategori distribusi : <i>menyeluruh</i></span>
+    </section>
+
+    <section class="py-5 bg-body-secondary">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-xl-2 g-3">
+
+          <div class="col pb-3">
+            <h6>SK Terbaru</h6>
+            <div class="list-group small shadow">
+
+              <a href="detail.html" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                aria-current="true">
+                <img src="assets/img/pdf_icon.png" alt="pdf" width="40rem" height="40rem" draggable="false">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                  <div>
+                    <h6 class="mb-0">146/SK/WBP/PEN/2023</h6>
+                    <p class="mb-0 opacity-75">Penetapan Jadwal Retensi Arsip</p>
+                  </div>
+                  <small class="opacity-50 text-nowrap"><i class="bi bi-calendar3 pe-1"></i>17 Nov 2023</small>
+                </div>
+              </a>
+
+              <a href="detail.html" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                aria-current="true">
+                <img src="assets/img/pdf_icon.png" alt="pdf" w idth="40rem" height="40rem" draggable="false">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                  <div>
+                    <h6 class="mb-0">146/SK/WBP/PEN/2023</h6>
+                    <p class="mb-0 opacity-75">Penetapan Jadwal Retensi Arsip</p>
+                  </div>
+                  <small class="opacity-50 text-nowrap"><i class="bi bi-calendar3 pe-1"></i>16 Nov 2023</small>
+                </div>
+              </a>
+
+              <a href="detail.html" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                aria-current="true">
+                <img src="assets/img/pdf_icon.png" alt="pdf" width="40rem" height="40rem" draggable="false">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                  <div>
+                    <h6 class="mb-0">146/SK/WBP/PEN/2023</h6>
+                    <p class="mb-0 opacity-75">Penetapan Jadwal Retensi Arsip</p>
+                  </div>
+                  <small class="opacity-50 text-nowrap"><i class="bi bi-calendar3 pe-1"></i>15 Nov 2023</small>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="col">
+            <h6>SK Populer</h6>
+            <div class="list-group small shadow">
+
+              <a href="detail.html" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                aria-current="true">
+                <img src="assets/img/pdf_icon.png" alt="pdf" width="40rem" height="40rem" draggable="false">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                  <div>
+                    <h6 class="mb-0">146/SK/WBP/PEN/2023</h6>
+                    <p class="mb-0 opacity-75">Penetapan Jadwal Retensi Arsip</p>
+                  </div>
+                  <small class="opacity-50 text-nowrap"><i class="bi bi-eye pe-1"></i>100.000</small>
+                </div>
+              </a>
+
+              <a href="detail.html" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                aria-current="true">
+                <img src="assets/img/pdf_icon.png" alt="pdf" width="40rem" height="40rem" draggable="false">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                  <div>
+                    <h6 class="mb-0">146/SK/WBP/PEN/2023</h6>
+                    <p class="mb-0 opacity-75">Penetapan Jadwal Retensi Arsip</p>
+                  </div>
+                  <small class="opacity-50 text-nowrap"><i class="bi bi-eye pe-1"></i>75.000</small>
+                </div>
+              </a>
+
+              <a href="detail.html" class="list-group-item list-group-item-action d-flex gap-3 py-3"
+                aria-current="true">
+                <img src="assets/img/pdf_icon.png" alt="pdf" width="40rem" height="40rem" draggable="false">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                  <div>
+                    <h6 class="mb-0">146/SK/WBP/PEN/2023</h6>
+                    <p class="mb-0 opacity-75">Penetapan Jadwal Retensi Arsip</p>
+                  </div>
+                  <small class="opacity-50 text-nowrap"><i class="bi bi-eye pe-1"></i>50.000</small>
+                </div>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-5 bg-body-secondary">
+      <div class="container">
+        <div class="card shadow p-3 border-0">
+          <table id="dataTable" class="table table-striped w-100 text-nowrap">
+            <thead>
+              <tr>
+                <th>Nomor</th>
+                <th>Judul</th>
+                <th>Tanggal Penetapan</th>
+                <th>Total Pembaca</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">01/SK/WBP/PEN/2023</a></td>
+                <td>System Architect</td>
+                <td>2011-04-25</td>
+                <td>320.800</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">02/SK/WBP/PEN/2023</a></td>
+                <td>Accountant</td>
+                <td>2011-07-25</td>
+                <td>170.750</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">03/SK/WBP/PEN/2023</a></td>
+                <td>Junior Technical Author</td>
+                <td>2009-01-12</td>
+                <td>86.000</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">04/SK/WBP/PEN/2023</a></td>
+                <td>Senior Javascript Developer</td>
+                <td>2012-03-29</td>
+                <td>433.060</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">05/SK/WBP/PEN/2023</a></td>
+                <td>Accountant</td>
+                <td>2008-11-28</td>
+                <td>162.700</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">06/SK/WBP/PEN/2023</a></td>
+                <td>Integration Specialist</td>
+                <td>2012-12-02</td>
+                <td>372.000</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">07/SK/WBP/PEN/2023</a></td>
+                <td>Sales Assistant</td>
+                <td>2012-08-06</td>
+                <td>137.500</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">08/SK/WBP/PEN/2023</a></td>
+                <td>Integration Specialist</td>
+                <td>2010-10-14</td>
+                <td>327.900</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">09/SK/WBP/PEN/2023</a></td>
+                <td>Javascript Developer</td>
+                <td>2009-09-15</td>
+                <td>205.500</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">10/SK/WBP/PEN/2023</a></td>
+                <td>Software Engineer</td>
+                <td>2008-12-13</td>
+                <td>103.600</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">11/SK/WBP/PEN/2023</a></td>
+                <td>Office Manager</td>
+                <td>2008-12-19</td>
+                <td>90.560</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">12/SK/WBP/PEN/2023</a></td>
+                <td>Support Lead</td>
+                <td>2013-03-03</td>
+                <td>342.000</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">13/SK/WBP/PEN/2023</a></td>
+                <td>Regional Director</td>
+                <td>2008-10-16</td>
+                <td>470.600</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">14/SK/WBP/PEN/2023</a></td>
+                <td>Senior Marketing Designer</td>
+                <td>2012-12-18</td>
+                <td>313.500</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">15/SK/WBP/PEN/2023</a></td>
+                <td>Regional Director</td>
+                <td>2010-03-17</td>
+                <td>385.750</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">16/SK/WBP/PEN/2023</a></td>
+                <td>Marketing Designer</td>
+                <td>2012-11-27</td>
+                <td>198.500</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">17/SK/WBP/PEN/2023</a></td>
+                <td>Chief Financial Officer (CFO)</td>
+                <td>2010-06-09</td>
+                <td>725.000</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">18/SK/WBP/PEN/2023</a></td>
+                <td>Systems Administrator</td>
+                <td>2009-04-10</td>
+                <td>237.500</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">19/SK/WBP/PEN/2023</a></td>
+                <td>Software Engineer</td>
+                <td>2012-10-13</td>
+                <td>132.000</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">20/SK/WBP/PEN/2023</a></td>
+                <td>Personnel Lead</td>
+                <td>2012-09-26</td>
+                <td>217.500</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">21/SK/WBP/PEN/2023</a></td>
+                <td>Development Lead</td>
+                <td>2011-09-03</td>
+                <td>345.000</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">22/SK/WBP/PEN/2023</a></td>
+                <td>Chief Marketing Officer (CMO)</td>
+                <td>2009-06-25</td>
+                <td>675.000</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">23/SK/WBP/PEN/2023</a></td>
+                <td>Pre-Sales Support</td>
+                <td>2011-12-12</td>
+                <td>106.450</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">24/SK/WBP/PEN/2023</a></td>
+                <td>Sales Assistant</td>
+                <td>2010-09-20</td>
+                <td>85.600</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">25/SK/WBP/PEN/2023</a></td>
+                <td>Chief Executive Officer (CEO)</td>
+                <td>2009-10-09</td>
+                <td>1.200,000</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">26/SK/WBP/PEN/2023</a></td>
+                <td>Developer</td>
+                <td>2010-12-22</td>
+                <td>92.575</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">27/SK/WBP/PEN/2023</a></td>
+                <td>Regional Director</td>
+                <td>2010-11-14</td>
+                <td>357.650</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">28/SK/WBP/PEN/2023</a></td>
+                <td>Software Engineer</td>
+                <td>2011-06-07</td>
+                <td>206.850</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">29/SK/WBP/PEN/2023</a></td>
+                <td>Chief Operating Officer (COO)</td>
+                <td>2010-03-11</td>
+                <td>850.000</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">30/SK/WBP/PEN/2023</a></td>
+                <td>Regional Marketing</td>
+                <td>2011-08-14</td>
+                <td>163.000</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">31/SK/WBP/PEN/2023</a></td>
+                <td>Integration Specialist</td>
+                <td>2011-06-02</td>
+                <td>95.400</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">32/SK/WBP/PEN/2023</a></td>
+                <td>Developer</td>
+                <td>2009-10-22</td>
+                <td>114.500</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">33/SK/WBP/PEN/2023</a></td>
+                <td>Technical Author</td>
+                <td>2011-05-07</td>
+                <td>145.000</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">34/SK/WBP/PEN/2023</a></td>
+                <td>Team Leader</td>
+                <td>2008-10-26</td>
+                <td>235.500</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">35/SK/WBP/PEN/2023</a></td>
+                <td>Post-Sales support</td>
+                <td>2011-03-09</td>
+                <td>324.050</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">36/SK/WBP/PEN/2023</a></td>
+                <td>Marketing Designer</td>
+                <td>2009-12-09</td>
+                <td>85.675</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">37/SK/WBP/PEN/2023</a></td>
+                <td>Office Manager</td>
+                <td>2008-12-16</td>
+                <td>164.500</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">38/SK/WBP/PEN/2023</a></td>
+                <td>Secretary</td>
+                <td>2010-02-12</td>
+                <td>109.850</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">39/SK/WBP/PEN/2023</a></td>
+                <td>Financial Controller</td>
+                <td>2009-02-14</td>
+                <td>452.500</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">40/SK/WBP/PEN/2023</a></td>
+                <td>Office Manager</td>
+                <td>2008-12-11</td>
+                <td>136.200</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">41/SK/WBP/PEN/2023</a></td>
+                <td>Director</td>
+                <td>2008-09-26</td>
+                <td>645.750</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">42/SK/WBP/PEN/2023</a></td>
+                <td>Support Engineer</td>
+                <td>2011-02-03</td>
+                <td>234.500</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">43/SK/WBP/PEN/2023</a></td>
+                <td>Software Engineer</td>
+                <td>2011-05-03</td>
+                <td>163.500</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">44/SK/WBP/PEN/2023</a></td>
+                <td>Support Engineer</td>
+                <td>2009-08-19</td>
+                <td>139.575</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">45/SK/WBP/PEN/2023</a></td>
+                <td>Developer</td>
+                <td>2013-08-11</td>
+                <td>98.540</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">46/SK/WBP/PEN/2023</a></td>
+                <td>Support Engineer</td>
+                <td>2009-07-07</td>
+                <td>87.500</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">47/SK/WBP/PEN/2023</a></td>
+                <td>Data Coordinator</td>
+                <td>2012-04-09</td>
+                <td>138.575</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">48/SK/WBP/PEN/2023</a></td>
+                <td>Software Engineer</td>
+                <td>2010-01-04</td>
+                <td>125.250</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">49/SK/WBP/PEN/2023</a></td>
+                <td>Software Engineer</td>
+                <td>2012-06-01</td>
+                <td>115.000</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">50/SK/WBP/PEN/2023</a></td>
+                <td>Junior Javascript Developer</td>
+                <td>2013-02-01</td>
+                <td>75.650</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">51/SK/WBP/PEN/2023</a></td>
+                <td>Sales Assistant</td>
+                <td>2011-12-06</td>
+                <td>145.600</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">52/SK/WBP/PEN/2023</a></td>
+                <td>Regional Director</td>
+                <td>2011-03-21</td>
+                <td>356.250</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">53/SK/WBP/PEN/2023</a></td>
+                <td>Systems Administrator</td>
+                <td>2009-02-27</td>
+                <td>103.500</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">54/SK/WBP/PEN/2023</a></td>
+                <td>Developer</td>
+                <td>2010-07-14</td>
+                <td>86.500</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">55/SK/WBP/PEN/2023</a></td>
+                <td>Regional Director</td>
+                <td>2008-11-13</td>
+                <td>183.000</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">56/SK/WBP/PEN/2023</a></td>
+                <td>Javascript Developer</td>
+                <td>2011-06-27</td>
+                <td>183.000</td>
+              </tr>
+              <tr>
+                <td><a href="detail.html" class="text-decoration-none">57/SK/WBP/PEN/2023</a></td>
+                <td>Customer Support</td>
+                <td>2011-01-25</td>
+                <td>112.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="wbpblue text-light" data-bs-theme="dark">
+    <div class="container pt-5">
+      <div class="row">
+
+        <div class="col-6 col-md-3 mb-3">
+          <h5>Perusahaan</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://waskitaprecast.co.id/riwayat-singkat-wsbp"
+                class="nav-link p-0 text-body-secondary" target="_blank">Riwayat Singkat WSBP</a></li>
+            <li class="nav-item mb-2"><a href="https://waskitaprecast.co.id/visi-dan-misi"
+                class="nav-link p-0 text-body-secondary" target="_blank">Visi & Misi</a></li>
+            <li class="nav-item mb-2"><a href="https://waskitaprecast.co.id/lini-bisnis"
+                class="nav-link p-0 text-body-secondary" target="_blank">Lini Bisnis</a></li>
+            <li class="nav-item mb-2"><a href="https://waskitaprecast.co.id/manajemen"
+                class="nav-link p-0 text-body-secondary" target="_blank">Manajemen</a></li>
+            <li class="nav-item mb-2"><a href="https://waskitaprecast.co.id/struktur-organisasi"
+                class="nav-link p-0 text-body-secondary" target="_blank">Struktur Organisasi</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 mb-3">
+          <h5>Tata Kelola</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="https://waskitaprecast.co.id/praktik-tata-kelola"
+                class="nav-link p-0 text-body-secondary" target="_blank">Praktik Tata Kelola</a></li>
+            <li class="nav-item mb-2"><a href="https://waskitaprecast.co.id/standar-etika"
+                class="nav-link p-0 text-body-secondary" target="_blank">Standar Etika</a></li>
+            <li class="nav-item mb-2"><a href="https://waskitaprecast.co.id/whistleblowing-system"
+                class="nav-link p-0 text-body-secondary" target="_blank">Whistleblowing System</a></li>
+            <li class="nav-item mb-2"><a href="https://waskitaprecast.co.id/auditor-external"
+                class="nav-link p-0 text-body-secondary" target="_blank">Auditor External</a></li>
+            <li class="nav-item mb-2"><a href="https://waskitaprecast.co.id/manajemen-risiko"
+                class="nav-link p-0 text-body-secondary" target="_blank">Manajemen Risiko</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 mb-3">
+          <h5>Bisnis Proses</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="single.html" class="nav-link p-0 text-body-secondary">Level 1</a></li>
+            <li class="nav-item mb-2"><a href="single.html" class="nav-link p-0 text-body-secondary">Level 2</a></li>
+            <li class="nav-item mb-2"><a href="single.html" class="nav-link p-0 text-body-secondary">End to End</a></li>
+            <li class="nav-item mb-2">
+              <a href="https://probis.waskitaprecast.co.id/" target="_blank" class="nav-link p-0 text-body-secondary">
+                Enterprise Architecture <br>
+                <img src="https://probis.waskitaprecast.co.id/images/logo-login.png" draggable="false" width="75rem"
+                  alt="logo">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3 mb-3 small">
+          <div class="alert alert-warning">
+            Jika ada yang kurang sesuai silahkan ajukan <a href="pengajuan.html" class="text-decoration-none">Form Perubahan</a>
+          </div>
+          <div class="alert alert-info">
+            <i class="bi bi-envelope-fill"></i> Kritik & Saran, <a href="mailto:sistem.group@waskitaprecast.co.id"
+              class="text-decoration-none">Send email</a>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 border-top">
+        <p>2023 PT Waskita Beton Precast Tbk</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/waskita_precast"
+              target="_blank"><i class="bi bi-instagram"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="https://twitter.com/waskita_precast" target="_blank"><i
+                class="bi bi-twitter-x"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="https://id-id.facebook.com/WaskitaBetonPrecast"
+              target="_blank"><i class="bi bi-facebook"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="https://www.youtube.com/@WSBP" target="_blank"><i
+                class="bi bi-youtube"></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="https://www.waskitaprecast.co.id" target="_blank"><i
+                class="bi bi-globe"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/dist/js/page_loading.js"></script>
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Datatable -->
+  <script src="assets/dist/js/jquery-3.7.0.js"></script>
+  <script src="assets/dist/js/jquery.dataTables.min.js"></script>
+  <script src="assets/dist/js/dataTables.bootstrap5.min.js"></script>
+
+  <!-- Start DataTable -->
+  <script>
+    new DataTable('#dataTable', {
+      scrollX: true
+    });
+  </script>
+  <!-- End DataTable -->
+
+</body>
+
+</html>
